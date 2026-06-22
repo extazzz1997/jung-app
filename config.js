@@ -5,5 +5,8 @@
 // нужен HTTPS-туннель (Cloudflare Tunnel / ngrok) или reverse-proxy. Впиши его URL сюда.
 // Пример: "https://jung-api.example.com"
 window.JUNG_CONFIG = {
-  API_BASE: "https://CHANGE-ME.example.com",
+  // Cloudflare quick-туннель на aiohttp-бэкенд бота (localhost:8791).
+  // ВНИМАНИЕ: quick-туннель ЭФЕМЕРНЫЙ — меняется при перезапуске cloudflared.
+  // Для 24/7 заменить на постоянный named-tunnel (cloudflared login + домен).
+  API_BASE: "https://networks-dow-knives-sunrise.trycloudflare.com",
 };
